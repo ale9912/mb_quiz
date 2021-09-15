@@ -31,7 +31,8 @@ public class SoundManager : MonoBehaviour
         }
         else
         {
-			Destroy(gameObject);
+			if (gameObject != null)
+				Destroy(gameObject);
         }
 	}
 	
@@ -40,11 +41,14 @@ public class SoundManager : MonoBehaviour
 	//colora di verde la barra del livello del volume
 	private void Update()
     {
-		var fill = (volumeSlider as UnityEngine.UI.Slider).GetComponentsInChildren<UnityEngine.UI.Image>()
-					.FirstOrDefault(t => t.name == "Fill");
-		if (fill != null)
+		if (volumeSlider != null)
 		{
-			fill.color = Color.Lerp(Color.white, Color.green, (float)0.5);
+			var fill = (volumeSlider as UnityEngine.UI.Slider).GetComponentsInChildren<UnityEngine.UI.Image>()
+					.FirstOrDefault(t => t.name == "Fill");
+			if (fill != null)
+			{
+				fill.color = Color.Lerp(Color.white, Color.green, (float)0.5);
+			}
 		}
 	}
     private void Start()
@@ -71,6 +75,8 @@ public class SoundManager : MonoBehaviour
 
 	public void OpenSlider()
     {
-		volumeSlider.gameObject.SetActive(true);
+		if (volumeSlider.gameObject.activeInHierarchy)
+			volumeSlider.gameObject.SetActive(false);
+		else volumeSlider.gameObject.SetActive(true);
     }
 }
