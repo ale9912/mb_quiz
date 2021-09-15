@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
+  m_Name: Informatica
+  m_EditorClassIdentifier: 
+  categoryName: Informatica
+  questions:
+  - questionInfo: "Quale tra i seguenti NON \xE8 un social network?"
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Badoo
+    - LinkedIn
+    - Amazon
+    - Google+
+    correctAns: Amazon
+  - questionInfo: " Quale tra queste \xE8 una unit\xE0 misura per la memoria di massa
+      di un computer?"
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Il gigabyte
+    - Il megahertz
+    - Il newton
+    - La frequenza
+    correctAns: Il gigabyte
+  - questionInfo: "Quale delle seguenti unit\xE0 di memoria non consente la modifica
+      dei dati in essa contenuti?"
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - ROM
+    - RAM
+    - Hard Disk
+    - Pen drive
+    correctAns: ROM
+  - questionInfo: Quanti caratteri diversi possono essere rappresentati nel codice
+      ASCII ?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - 256
+    - 8
+    - Infiniti
+    - 1024
+    correctAns: 256
+  - questionInfo: Quanti BIT ci sono in 1 Byte
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - 2 Bit
+    - 16 Bit
+    - 1024 Bit
+    - 8 Bit
+    correctAns: 8 Bit

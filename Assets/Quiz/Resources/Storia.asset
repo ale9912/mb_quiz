@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
+  m_Name: Storia
+  m_EditorClassIdentifier: 
+  categoryName: Storia
+  questions:
+  - questionInfo: 'Il sindacato dei lavoratori italiani fondato nel 1906 si chiamava:'
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Confederazione Italiana Sindacati Lavoratori
+    - ' Confederazione Generale del Lavoro'
+    - Confederazione Italiana Dirigenti d'Azienda
+    - Unione Lavoratori
+    correctAns: ' Confederazione Generale del Lavoro'
+  - questionInfo: "In che anno Mussolini dichiar\xF2 guerra alla Gran Bretagna e
+      alla Francia? "
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - 1939
+    - '1940 '
+    - 1941
+    - 1938
+    correctAns: '1940 '
+  - questionInfo: "Chi era Presidente del Consiglio dei Ministri nel 1984 quando
+      si firm\xF2 il concordato tra Stato e Chiesa?"
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Andreotti
+    - Cossiga
+    - Scalfaro
+    - 'Craxi '
+    correctAns: 'Craxi '
+  - questionInfo: ' Quando cadde il muro di Berlino?'
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - 1988
+    - '1989 '
+    - 1968
+    - 1992
+    correctAns: '1989 '
+  - questionInfo: ' Indica la data corretta del sequestro di Aldo Moro:'
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - 16 gennaio 1968
+    - 16 gennaio 1978
+    - 16 marzo 1978
+    - 16 luglio 1978
+    correctAns: 16 marzo 1978

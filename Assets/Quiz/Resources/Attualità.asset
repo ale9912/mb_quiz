@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
+  m_Name: "Attualit\xE0"
+  m_EditorClassIdentifier: 
+  categoryName: "Attualit\xE0"
+  questions:
+  - questionInfo: Dove si trova il ponte del Golden Gate?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Sydney
+    - San Francisco
+    - Los Angeles
+    - Londra
+    correctAns: San Francisco
+  - questionInfo: "Quale dei seguenti Stati \xE8 entrato per ultimo nella NATO?"
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Croazia
+    - Italia
+    - Regno Unito
+    - USA
+    correctAns: Croazia
+  - questionInfo: 'Il Leone d''oro viene assegnato al festival cinematografico di:'
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Cannes
+    - Berlino
+    - Venezia
+    - New York
+    correctAns: Venezia
+  - questionInfo: "In quale citt\xE0 ha avuto luogo il \"G20\" del 2020"
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - "Si \xE8 svolto virtualmente"
+    - Yokohama
+    - Londra
+    - Oslo
+    correctAns: "Si \xE8 svolto virtualmente"
+  - questionInfo: " Quale tra i seguenti Paesi \xE8 membro permanente del Consiglio
+      di Sicurezza dell'ONU?"
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - L'Australia
+    - Il Cile
+    - La Germania
+    - La Cina
+    correctAns: La Cina
