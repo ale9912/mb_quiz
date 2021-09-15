@@ -6,9 +6,9 @@ using UnityEngine;
 public class QuizManager : MonoBehaviour
 {
 #pragma warning disable 649
-    //ref to the QuizGameUI script
+    
     [SerializeField] private QuizGameUI quizGameUI;
-    //ref to the scriptableobject file
+    
     [SerializeField] private List<QuizDataScriptable> quizDataList;
     [SerializeField] private float timeInSeconds;
 #pragma warning restore 649
@@ -97,7 +97,7 @@ public class QuizManager : MonoBehaviour
             //Yes, Ans is correct
             correctAnswerCount++;
             correct = true;
-            gameScore += 50;
+            gameScore += 1;
             quizGameUI.ScoreText.text = "Score:" + gameScore;
         }
         else
@@ -133,14 +133,19 @@ public class QuizManager : MonoBehaviour
     {
         gameStatus = GameStatus.NEXT;
         quizGameUI.GameOverPanel.SetActive(true);
+        quizGameUI.FinalScoreText.text = "Punteggio finale: " + gameScore;
+        
 
-        //fi you want to save only the highest score then compare the current score with saved score and if more save the new score
-        //eg:- if correctAnswerCount > PlayerPrefs.GetInt(currentCategory) then call below line
+        if (correctAnswerCount > PlayerPrefs.GetInt(currentCategory))
+            PlayerPrefs.SetInt(currentCategory, correctAnswerCount);
 
-        //Save the score
-        PlayerPrefs.SetInt(currentCategory, correctAnswerCount); //save the score for this category
+        quizGameUI.RecordText.text = "Record: " + PlayerPrefs.GetInt(currentCategory);
+
+
     }
 }
+
+
 
 //Datastructure for storeing the quetions data
 [System.Serializable]

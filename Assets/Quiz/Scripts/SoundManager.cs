@@ -10,9 +10,9 @@ public class SoundManager : MonoBehaviour
 
 	private static SoundManager instance = null;
 
-	float r = 31;  // red component
-	float g = 182;  // green component
-	float b = 122;  // blue component
+	float r = 255;  // red component
+	float g = 58;  // green component
+	float b = 0;  // blue component
 
 	Color color;
 
@@ -47,7 +47,7 @@ public class SoundManager : MonoBehaviour
 					.FirstOrDefault(t => t.name == "Fill");
 			if (fill != null)
 			{
-				fill.color = Color.Lerp(Color.white, Color.green, (float)0.5);
+				fill.color = Color.Lerp(Color.white, color, (float)0.5);
 			}
 		}
 	}
