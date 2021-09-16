@@ -14,9 +14,6 @@ public class QuizGameUI : MonoBehaviour
     [SerializeField] private List<Image> lifeImageList;
     [SerializeField] private GameObject gameOverPanel, mainMenu, gamePanel;
     [SerializeField] private Color correctCol, wrongCol, normalCol; //color of buttons
-    [SerializeField] private Image questionImg;                     //image component to show image
-    [SerializeField] private UnityEngine.Video.VideoPlayer questionVideo;   //to show video
-    [SerializeField] private AudioSource questionAudio;             //audio source for audio clip
     [SerializeField] private Text questionInfoText;                 //text to show question
     [SerializeField] private List<Button> options;                  //options button reference
 #pragma warning restore 649
@@ -57,34 +54,9 @@ public class QuizGameUI : MonoBehaviour
         switch (question.questionType)
         {
             case QuestionType.TEXT:
-                questionImg.transform.parent.gameObject.SetActive(false);   //deactivate image holder
-                break;
-            case QuestionType.IMAGE:
-                questionImg.transform.parent.gameObject.SetActive(true);    //activate image holder
-                questionVideo.transform.gameObject.SetActive(false);        //deactivate questionVideo
-                questionImg.transform.gameObject.SetActive(true);           //activate questionImg
-                questionAudio.transform.gameObject.SetActive(false);        //deactivate questionAudio
-
-                questionImg.sprite = question.questionImage;                //set the image sprite
-                break;
-            case QuestionType.AUDIO:
-                questionVideo.transform.parent.gameObject.SetActive(true);  //activate image holder
-                questionVideo.transform.gameObject.SetActive(false);        //deactivate questionVideo
-                questionImg.transform.gameObject.SetActive(false);          //deactivate questionImg
-                questionAudio.transform.gameObject.SetActive(true);         //activate questionAudio
                 
-                audioLength = question.audioClip.length;                    //set audio clip
-                StartCoroutine(PlayAudio());                                //start Coroutine
                 break;
-            case QuestionType.VIDEO:
-                questionVideo.transform.parent.gameObject.SetActive(true);  //activate image holder
-                questionVideo.transform.gameObject.SetActive(true);         //activate questionVideo
-                questionImg.transform.gameObject.SetActive(false);          //deactivate questionImg
-                questionAudio.transform.gameObject.SetActive(false);        //deactivate questionAudio
-
-                questionVideo.clip = question.videoClip;                    //set video clip
-                questionVideo.Play();                                       //play video
-                break;
+         
         }
 
         questionInfoText.text = question.questionInfo;                      //set the question text
@@ -114,26 +86,7 @@ public class QuizGameUI : MonoBehaviour
     /// IEnumerator to repeate the audio after some time
     /// </summary>
     /// <returns></returns>
-    IEnumerator PlayAudio()
-    {
-        //if questionType is audio
-        if (question.questionType == QuestionType.AUDIO)
-        {
-            //PlayOneShot
-            questionAudio.PlayOneShot(question.audioClip);
-            //wait for few seconds
-            yield return new WaitForSeconds(audioLength + 0.5f);
-            //play again
-            StartCoroutine(PlayAudio());
-        }
-        else //if questionType is not audio
-        {
-            //stop the Coroutine
-            StopCoroutine(PlayAudio());
-            //return null
-            yield return null;
-        }
-    }
+   
 
     /// <summary>
     /// Method assigned to the buttons

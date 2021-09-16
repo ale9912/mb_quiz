@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Quiz/Scenes/GameScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Quiz/Scenes/Menu.unity
+    guid: 5d6997c88005728498b7823fd75d2b58
   - enabled: 1
     path: Assets/Quiz/Scenes/Loginn.unity
     guid: f1e8bd5dbd920ca4ab58ef0aa1a7f99a
   - enabled: 1
-    path: Assets/Quiz/Scenes/Menu.unity
-    guid: 5d6997c88005728498b7823fd75d2b58
+    path: Assets/Quiz/Scenes/GameScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
