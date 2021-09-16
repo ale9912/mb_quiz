@@ -1,0 +1,180 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1202; Version 2009; 64bit' Language: 'it' Physical Memory: 16328 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Alessandro/Desktop/Quiz-master - Copia/mb_quiz
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55467
+Successfully changed project path to: C:/Users/Alessandro/Desktop/Quiz-master - Copia/mb_quiz
+C:/Users/Alessandro/Desktop/Quiz-master - Copia/mb_quiz
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 82.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.18f1 (a7d1c678663c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Alessandro/Desktop/Quiz-master - Copia/mb_quiz/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 650 (ID=0x11c8)
+    Vendor:   
+    VRAM:     2007 MB
+    Driver:   30.0.14.7196
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003712 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 65.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3172ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (683ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (236ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (279ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (21ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006302 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.699 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2700ms)
+		BeginReloadAssembly (219ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (2381ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (692ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (122ms)
+			SetupLoadedEditorAssemblies (1170ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (255ms)
+				ProcessInitializeOnLoadAttributes (871ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1655 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.8 MB.
+System memory in use after: 78.9 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2096.
+Total: 4.397400 ms (FindLiveObjects: 0.316700 ms CreateObjectMapping: 0.097600 ms MarkObjects: 3.895800 ms  DeleteObjects: 0.085300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Quiz/Scripts/SoundManager.cs
+  artifactKey: Guid(625af82cee1efc3429af68a1a54b6196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz/Scripts/SoundManager.cs using Guid(625af82cee1efc3429af68a1a54b6196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d068d1a2c8d8ffabd9411f5117b3081') in 0.037606 seconds 
+  Import took 0.042204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.073618 seconds.
+  path: Assets/Quiz/Scenes/Menu.unity
+  artifactKey: Guid(5d6997c88005728498b7823fd75d2b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz/Scenes/Menu.unity using Guid(5d6997c88005728498b7823fd75d2b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ff682cf830362745bb6fd0b14ed66e') in 0.020262 seconds 
+  Import took 0.024186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 906.247693 seconds.
+  path: Assets/Quiz/Scenes/GameScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz/Scenes/GameScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5af99ec5d8a4774164bb8ecca852a32') in 0.011057 seconds 
+  Import took 0.015188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.412204 seconds.
+  path: Assets/Quiz/Audio_risposte
+  artifactKey: Guid(c8cfddf07ec5a814ea89d0ae0eab76a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz/Audio_risposte using Guid(c8cfddf07ec5a814ea89d0ae0eab76a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141ba65b8ba139fded5250e183185811') in 0.012066 seconds 
+  Import took 0.015778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.745513 seconds.
+  path: Assets/Quiz/Audio_risposte/CorrectSFX.wav
+  artifactKey: Guid(d592c548e31106345a79bf0379a1f46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz/Audio_risposte/CorrectSFX.wav using Guid(d592c548e31106345a79bf0379a1f46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0278e43588c679406c48c563504b71') in 0.111741 seconds 
+  Import took 0.115240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Quiz/Audio_risposte/IncorrectSFX.wav
+  artifactKey: Guid(0df75e214ec68b54484b41dbd20317bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz/Audio_risposte/IncorrectSFX.wav using Guid(0df75e214ec68b54484b41dbd20317bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a09ba80aa83bdb98c2a7b3d1e57a809b') in 0.026923 seconds 
+  Import took 0.030010 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
