@@ -14,11 +14,11 @@ public abstract class ShuffleList
         int randomIndex = 0;
         while (originalList.Count > 0)
         {
-            randomIndex = r.Next(0, originalList.Count); //Choose a random object in the list
-            randomList.Add(originalList[randomIndex]); //add it to the new, random list
-            originalList.RemoveAt(randomIndex); //remove to avoid duplicates
+            randomIndex = r.Next(0, originalList.Count); 
+            randomList.Add(originalList[randomIndex]); //aggiunge l'elemento randomico alla lista
+            originalList.RemoveAt(randomIndex); 
         }
 
-        return randomList; //return the new random list
+        return randomList;
     }
 }

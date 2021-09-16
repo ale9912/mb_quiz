@@ -15,7 +15,7 @@ public class CategoryBtnScript : MonoBehaviour
     public void SetButton(string title, int totalQuestion)
     {
         categoryTitleText.text = title;
-        scoreText.text = PlayerPrefs.GetInt(title, 0) + "/" + totalQuestion; //we get the score save for this category
+        scoreText.text = PlayerPrefs.GetInt(title, 0) + "/" + totalQuestion; //punteggio per ogni categoria
     }
 
 }

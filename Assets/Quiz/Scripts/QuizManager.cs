@@ -18,9 +18,8 @@ public class QuizManager : MonoBehaviour
     public AudioSource wrongAudio;
     private string currentCategory = "";
     private int correctAnswerCount = 0;
-    //questions data
+    
     private List<Question> questions;
-    //current question data
     private Question selectedQuetion = new Question();
     private int gameScore;
     private int lifesRemaining;
@@ -41,26 +40,23 @@ public class QuizManager : MonoBehaviour
         gameScore = 0;
         lifesRemaining = 3;
         currentTime = timeInSeconds;
-        //set the questions data
+        
         questions = new List<Question>();
         dataScriptable = quizDataList[categoryIndex];
         questions.AddRange(dataScriptable.questions);
-        //select the question
         SelectQuestion();
         gameStatus = GameStatus.PLAYING;
         quizGameUI.NewRecord.gameObject.SetActive(false);
     }
 
-    /// <summary>
-    /// Method used to randomly select the question form questions data
-    /// </summary>
+    //seleziona una domanda casuale
     private void SelectQuestion()
     {
-        //get the random number
+        
         int val = UnityEngine.Random.Range(0, questions.Count);
-        //set the selectedQuetion
+        //imposta la domanda selezionata
         selectedQuetion = questions[val];
-        //send the question to quizGameUI
+        //imposta domanda nella UI
         quizGameUI.SetQuestion(selectedQuetion);
 
         questions.RemoveAt(val);
@@ -77,8 +73,8 @@ public class QuizManager : MonoBehaviour
 
     void SetTime(float value)
     {
-        TimeSpan time = TimeSpan.FromSeconds(currentTime);                       //set the time value
-        quizGameUI.TimerText.text = time.ToString("mm':'ss");   //convert time to Time format
+        TimeSpan time = TimeSpan.FromSeconds(currentTime);                    
+        quizGameUI.TimerText.text = time.ToString("mm':'ss");   //converte il formato
 
         if (currentTime <= 0)
         {
@@ -87,19 +83,17 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Method called to check the answer is correct or not
+    //controlla se la risposta è corretta
     /// </summary>
     /// <param name="selectedOption">answer string</param>
     /// <returns></returns>
     public bool Answer(string selectedOption)
     {
-        //set default to false
         bool correct = false;
-        //if selected answer is similar to the correctAns
+  
         if (selectedQuetion.correctAns == selectedOption)
         {
-            //Yes, Ans is correct
+            //risposta corretta
             correctAudio.Play();
             correctAnswerCount++;
             correct = true;
@@ -108,8 +102,7 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            //No, Ans is wrong
-            //Reduce Life
+            //risposta sbagliata
             wrongAudio.Play();
             lifesRemaining--;
             quizGameUI.ReduceLife(lifesRemaining);
@@ -124,7 +117,7 @@ public class QuizManager : MonoBehaviour
         {
             if (questions.Count > 0)
             {
-                //call SelectQuestion method again after 1s
+                //seleeziona nuova domanda dopo un tot di tempo
                 Invoke("SelectQuestion", 0.4f);
             }
             else
@@ -132,10 +125,11 @@ public class QuizManager : MonoBehaviour
                 GameEnd();
             }
         }
-        //return the value of correct bool
+       
         return correct;
     }
 
+    //partita finita, apre il pannello game over
     private void GameEnd()
     {
         gameStatus = GameStatus.NEXT;
@@ -158,15 +152,15 @@ public class QuizManager : MonoBehaviour
 
 
 
-//Datastructure for storeing the quetions data
+//sruttura domanda
 [System.Serializable]
 public class Question
 {
-    public string questionInfo;         //question text
-    public QuestionType questionType;   //type
+    public string questionInfo;         
+    public QuestionType questionType;  
     
-    public List<string> options;        //options to select
-    public string correctAns;           //correct option
+    public List<string> options;     
+    public string correctAns; 
 }
 
 [System.Serializable]
