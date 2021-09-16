@@ -783,7 +783,7 @@ GameObject:
   - component: {fileID: 362127561}
   - component: {fileID: 362127560}
   m_Layer: 5
-  m_Name: ScoreHolder
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 505457349}
   - component: {fileID: 505457348}
   m_Layer: 5
-  m_Name: Option2
+  m_Name: Question2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 564276198}
   - component: {fileID: 564276197}
   m_Layer: 5
-  m_Name: Option3
+  m_Name: Question3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1453,7 +1453,7 @@ GameObject:
   - component: {fileID: 664290791}
   - component: {fileID: 664290790}
   m_Layer: 5
-  m_Name: ScrollRect
+  m_Name: Category Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1840,7 +1840,7 @@ GameObject:
   - component: {fileID: 840704988}
   - component: {fileID: 840704987}
   m_Layer: 5
-  m_Name: TimeHolder
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1996,7 +1996,7 @@ GameObject:
   - component: {fileID: 1005231531}
   - component: {fileID: 1005231530}
   m_Layer: 5
-  m_Name: Option4
+  m_Name: Question4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,7 +2298,7 @@ GameObject:
   - component: {fileID: 1242079311}
   - component: {fileID: 1242079313}
   m_Layer: 5
-  m_Name: LifeHolder
+  m_Name: Lifes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2692,7 +2692,7 @@ GameObject:
   - component: {fileID: 1564835493}
   - component: {fileID: 1564835494}
   m_Layer: 5
-  m_Name: OptionsHolder
+  m_Name: Questions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2760,7 +2760,7 @@ GameObject:
   - component: {fileID: 1574697654}
   - component: {fileID: 1574697653}
   m_Layer: 5
-  m_Name: Option1
+  m_Name: Question1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2959,7 +2959,7 @@ GameObject:
   - component: {fileID: 1586805886}
   - component: {fileID: 1586805885}
   m_Layer: 5
-  m_Name: ScrollContent
+  m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3584,7 +3584,7 @@ GameObject:
   - component: {fileID: 2059792121}
   - component: {fileID: 2059792120}
   m_Layer: 5
-  m_Name: TopHolder
+  m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3791,9 +3791,6 @@ MonoBehaviour:
   correctCol: {r: 0.38641682, g: 0.8113208, b: 0.21813813, a: 1}
   wrongCol: {r: 0.8396226, g: 0.18614274, b: 0.18614274, a: 1}
   normalCol: {r: 1, g: 1, b: 1, a: 1}
-  questionImg: {fileID: 0}
-  questionVideo: {fileID: 0}
-  questionAudio: {fileID: 0}
   questionInfoText: {fileID: 1071844362}
   options:
   - {fileID: 1574697653}
