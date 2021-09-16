@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuizManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class QuizManager : MonoBehaviour
     [SerializeField] private float timeInSeconds;
 #pragma warning restore 649
 
+    public AudioSource correctAudio;
+    public AudioSource wrongAudio;
     private string currentCategory = "";
     private int correctAnswerCount = 0;
     //questions data
@@ -23,6 +26,7 @@ public class QuizManager : MonoBehaviour
     private int lifesRemaining;
     private float currentTime;
     private QuizDataScriptable dataScriptable;
+    
 
     private GameStatus gameStatus = GameStatus.NEXT;
 
@@ -44,6 +48,7 @@ public class QuizManager : MonoBehaviour
         //select the question
         SelectQuestion();
         gameStatus = GameStatus.PLAYING;
+        quizGameUI.NewRecord.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -95,6 +100,7 @@ public class QuizManager : MonoBehaviour
         if (selectedQuetion.correctAns == selectedOption)
         {
             //Yes, Ans is correct
+            correctAudio.Play();
             correctAnswerCount++;
             correct = true;
             gameScore += 1;
@@ -104,6 +110,7 @@ public class QuizManager : MonoBehaviour
         {
             //No, Ans is wrong
             //Reduce Life
+            wrongAudio.Play();
             lifesRemaining--;
             quizGameUI.ReduceLife(lifesRemaining);
 
@@ -137,7 +144,11 @@ public class QuizManager : MonoBehaviour
         
 
         if (correctAnswerCount > PlayerPrefs.GetInt(currentCategory))
+        {
             PlayerPrefs.SetInt(currentCategory, correctAnswerCount);
+            quizGameUI.NewRecord.gameObject.SetActive(true);
+        }
+            
 
         quizGameUI.RecordText.text = "Record: " + PlayerPrefs.GetInt(currentCategory);
 

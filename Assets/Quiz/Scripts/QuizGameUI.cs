@@ -10,7 +10,7 @@ public class QuizGameUI : MonoBehaviour
     [SerializeField] private QuizManager quizManager;               //ref to the QuizManager script
     [SerializeField] private CategoryBtnScript categoryBtnPrefab;
     [SerializeField] private GameObject scrollHolder;
-    [SerializeField] private Text scoreText, timerText, finalScoreText,recordText;
+    [SerializeField] private Text scoreText, timerText, finalScoreText,recordText,newRecord;
     [SerializeField] private List<Image> lifeImageList;
     [SerializeField] private GameObject gameOverPanel, mainMenu, gamePanel;
     [SerializeField] private Color correctCol, wrongCol, normalCol; //color of buttons
@@ -30,7 +30,8 @@ public class QuizGameUI : MonoBehaviour
     public GameObject GameOverPanel { get => gameOverPanel; }  
     public Text FinalScoreText { get => finalScoreText;  }
     public Text RecordText { get => recordText; }
-    
+    public Text NewRecord { get => newRecord; }
+
 
     private void Start()
     {
